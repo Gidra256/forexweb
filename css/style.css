@@ -416,4 +416,362 @@ body {
     .tools-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Authentication Pages */
+.auth-section {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1rem 2rem;
+    background-color: var(--light-background);
+}
+
+.auth-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.auth-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.auth-form .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.875rem;
+    float: right;
+}
+
+.auth-redirect {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--light-text);
+}
+
+.auth-redirect a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Page Header Styles */
+.page-header {
+    background-color: var(--light-background);
+    padding: 8rem 1rem 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.25rem;
+    color: var(--light-text);
+}
+
+/* Section Styles */
+.tools-section, .resources-section, .analysis-section {
+    padding: 5rem 0;
+    background-color: var(--background);
+}
+
+.tools-section:nth-child(even), 
+.resources-section:nth-child(even), 
+.analysis-section:nth-child(even) {
+    background-color: var(--light-background);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+/* Grid Layout */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.tool-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.15);
+}
+
+.tool-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.tool-card h3 {
+    font-size: 1.75rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.tool-card p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.tool-card .btn {
+    margin-top: auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Section Specific Styles */
+.market-news, .trading-tools, .risk-management {
+    position: relative;
+}
+
+.market-news::before, 
+.trading-tools::before, 
+.risk-management::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+
+/* Analysis Page Specific Styles */
+.analysis-section {
+    padding: 5rem 0;
+    background-color: var(--background);
+}
+
+.analysis-section:nth-child(even) {
+    background-color: var(--light-background);
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin: 0 auto;
+}
+
+.analysis-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+.analysis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.15);
+}
+
+.analysis-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.analysis-card h3 {
+    font-size: 1.75rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.analysis-card p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.analysis-card .btn {
+    margin-top: auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Fundamental Analysis Section Specific */
+.fundamental {
+    position: relative;
+}
+
+.fundamental::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .tool-card {
+        padding: 2rem 1.5rem;
+        min-height: auto;
+    }
+
+    .tool-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .tool-card p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Adjustments for Analysis */
+@media (max-width: 1200px) {
+    .analysis-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .analysis-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .analysis-card {
+        padding: 2rem 1.5rem;
+        min-height: auto;
+    }
+
+    .analysis-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .analysis-card p {
+        font-size: 1rem;
+    }
 } 
