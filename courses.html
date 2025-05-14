@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Courses - ForexMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ForexMaster</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#courses" class="active">Courses</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Course Header -->
+    <header class="course-header">
+        <div class="header-content">
+            <h1>Forex Trading Courses</h1>
+            <p>From beginner to advanced - take your trading to the next level</p>
+        </div>
+    </header>
+
+    <!-- Course Categories -->
+    <section class="course-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Beginner Course -->
+                <div class="course-card" data-category="beginner">
+                    <div class="course-image">
+                        <img src="images/forex-basics.jpg" alt="Forex Basics">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Forex Trading Fundamentals</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 1.2k students</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p>Master the basics of forex trading, understand currency pairs, and learn fundamental analysis.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Introduction to Forex Markets</li>
+                            <li><i class="fas fa-check"></i> Currency Pairs & Market Structure</li>
+                            <li><i class="fas fa-check"></i> Basic Technical Analysis</li>
+                            <li><i class="fas fa-check"></i> Risk Management Basics</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="price">$199</div>
+                            <a href="#enroll" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate Course -->
+                <div class="course-card" data-category="intermediate">
+                    <div class="course-image">
+                        <img src="images/technical-analysis.jpg" alt="Technical Analysis">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Advanced Technical Analysis</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 850 students</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p>Deep dive into technical analysis, chart patterns, and indicators.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Advanced Chart Patterns</li>
+                            <li><i class="fas fa-check"></i> Multiple Timeframe Analysis</li>
+                            <li><i class="fas fa-check"></i> Indicator Combinations</li>
+                            <li><i class="fas fa-check"></i> Trading Psychology</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="price">$299</div>
+                            <a href="#enroll" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Course -->
+                <div class="course-card" data-category="advanced">
+                    <div class="course-image">
+                        <img src="images/pro-trading.jpg" alt="Professional Trading">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Professional Trading Strategies</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 500 students</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p>Master advanced trading strategies and portfolio management.</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> Advanced Risk Management</li>
+                            <li><i class="fas fa-check"></i> Portfolio Optimization</li>
+                            <li><i class="fas fa-check"></i> Algorithmic Trading</li>
+                            <li><i class="fas fa-check"></i> Market Making Strategies</li>
+                        </ul>
+                        <div class="course-footer">
+                            <div class="price">$499</div>
+                            <a href="#enroll" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Benefits -->
+    <section class="course-benefits">
+        <div class="container">
+            <h2>Why Learn With Us</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-video"></i>
+                    <h3>HD Video Lessons</h3>
+                    <p>Crystal clear video lessons with practical examples</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Support</h3>
+                    <p>Get help from instructors when you need it</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certificate</h3>
+                    <p>Receive a certificate upon course completion</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-infinity"></i>
+                    <h3>Lifetime Access</h3>
+                    <p>Access course materials forever</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#news">Market News</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#risk">Risk Disclosure</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ForexMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html> 
